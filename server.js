@@ -3,7 +3,7 @@ const express = require("express");
 const socketio = require("socket.io");
 const RpsGame = require("./rps-game");
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 const CLIENT_PATH = `${__dirname}/client`;
 console.log(`Serving static from ${CLIENT_PATH}`);
 
